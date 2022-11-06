@@ -4,34 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icons8-tubo-de-ensaio-40.png">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadora de mana</title>
 </head>
 <body>
 
     <header>
-        <audio id="music">
-            <source src="musica/294_Cutpurse_Pursuit.mp3" type="audio/mp3">
-            <a href="viper.mp3">https://tabletopaudio.com/</a> instead.</p>
-        </audio>
+        
+        <svg viewbox="0 0 100 20">
+            <defs>
+              <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="2%" stop-color="#32634"/>
+                <stop offset="95%" stop-color="#123752"/>
+              </linearGradient>
+              <pattern id="wave" x="0" y="0" width="120" height="50" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                  <animateTransform
+                      attributeName="transform"
+                      begin="0s"
+                      dur="1.5s"
+                      type="translate"
+                      from="0,0"
+                      to="40,0"
+                      repeatCount="indefinite" />
+                </path>
+              </pattern>
+            </defs>
+            <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="0.8">TORMENTA20</text>
+            <text texT-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.3">TORMENTA20</text>
+          </svg>
+
+        <audio controls autoplay>
+
+            <source src="horse.ogg" type="audio/ogg">
+          
+            <source src="musica/294_Cutpurse_Pursuit.mp3" type="audio/mpeg">
+          
+          Your browser does not support the audio element.
+          
+          </audio>
         <h1>Calculadora de Mana</h1>
-        <h3> Para nós que sempre erramos os calculos complexos das magias</h3>
+        <h2> Para nós que sempre erramos os calculos complexos das magias</h2>
     </header>
-    <main>
-    
-        <section class="saldo">
-            <label class="quantospms"> Você Possui <input type="number" id=""> PM's</label> <br>
-            <label class="ciclo"> Ciclo da mágia? <input type="number"></label> <br>
-            <label class="decrescimo">Quando economizou? <input type="number"></label> <br>
-            <label class="aprimoramentos">Quer adicionar mais quantos PM's <input type="number"></label>
-        </section>
-    
+    <main>  
+        <div class="efeito"> <img src="imagens/eda543f9793331b2e77f2ac6842ccd-unscreen.gif" alt="efeito de brilho"></div>
+        <div class="pote"> <img src="imagens/de6174fee92b0f84e6b002d161bb0bcb-removebg-preview.png" width="970px" alt="pote de mana"> </div>
+      
+       <div class="perguntas"><h3>
+
+            <div><label> Pontos de Mana Atual 
+                <input id="mana_atual" type="number" min="0" value="0"  oninput="this.value = Math.abs(this.value)"> </label></div>
+            <div> <label> Qual o ciclo da magia?
+                <input id="ciclo_magia" type="number" min="1" max="5" value="0" oninput="this.value = Math.abs(this.value)"  onclick="calcular()"> </label></div>
+            <div> <label> Quanto Economizou?
+                <input id="economizou" type="number" min="0" value="0" oninput="this.value = Math.abs(this.value)"  onclick="calcular()"> </label></div>
+            <div>  <label> Quantos Aprimoramentos?
+                <input id="aprimoramento" type="number"  min="0" value="0" oninput="this.value = Math.abs(this.value)" onclick="calcular()"> </label></div></div>
+            </h3></div>
+            <table id="tabela">
+                <tr>
+                    <td><div> 
+                         <label> <h2>Custo dessa mágia: </label></div></td>
+                    <td><div>  <label type="number" id="custo"><h2>0</label></div></td>
+                </tr>
+                <tr>
+                    <td><div>  <label><h2>Vai sobrar: </label></div></td>
+                    <td><div>  <label type="number" id="sobra"><h2>0</label></div></td>
+                </tr>
+            </table>
+       </div>
+          
     </main>
-    <footer>
+    <script src="script.js"></script>
+   
+   
+</body> 
+<footer>
         <p>
             Projeto construído para fins didáticos, com o objetivo de colocar em
-            prática os conhecimentos de HTML, CSS e JavaScript aprendidos 
+            prática os conhecimentos de HTML, CSS e JavaScript aprendidos
           </p>
     </footer>
-</body>
 </html>
