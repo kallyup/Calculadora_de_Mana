@@ -1,4 +1,4 @@
-# Calculadora_de_Mana
+# Calculadora de Mana
 projetinho pessoal
-## Link_Para_Testes
-https://raw.githack.com/kallyup/Calculadora_de_Mana/main/index.html
+## Link Para Testes
+[Site](https://raw.githack.com/kallyup/Calculadora_de_Mana/main/index.html "Nunca mais erro os cálculos")
