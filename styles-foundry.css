@@ -1,18 +1,43 @@
 .perguntas-foundry{
- margin-top: -460px; 
+ margin-top: -410px; 
  margin-left: 380px;
 position: absolute;
 }
 
 #custo-text{
-  color: rgb(113, 214, 18);
+  color: black;
+  margin-top: -400px; 
+  margin-left: -290px;
+ position: absolute;
+ font-size: 0.7cm;
+}
+
+
+
+#sobra-text{
+  color: black;
+  margin-top: -400px; 
+  margin-left: 100px;
+  margin-right: -150px;
+ position: absolute;
+ font-size: 0.7cm;
 }
 
 #custo{
-  color: rgb(113, 214, 18);
-  font-size: 0.8cm;
+  color: black;
+  font-size: 0.9cm;
+  margin-top: -350px; 
+  margin-left: -220px;
+ position: absolute;
+ 
+
 }
 #sobra{
-  color: rgb(113, 214, 18);
-  font-size: 0.8cm;
+  color: black;
+  font-size: 0.9cm;
+  margin-top: -350px;
+  margin-left: 150px;
+  margin-right: -150px;
+  position: absolute;
 }
+
