@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icons8-tubo-de-ensaio-40.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-foundry.css">
+    <title>Calculadora de mana</title>
+</head>
+<body>
+    <main>  
+        <div class="efeito"> <img src="imagens/eda543f9793331b2e77f2ac6842ccd-unscreen.gif" alt="efeito de brilho"></div>
+        <div class="pote"> <img src="imagens/de6174fee92b0f84e6b002d161bb0bcb-removebg-preview.png" width="970px" alt="pote de mana"> </div>
+      
+       <div class="perguntas-foundry"><h3>
+            <div><label> Pontos de Mana Atual 
+                <input id="mana_atual" type="number" min="0" value="0"  oninput="this.value = Math.abs(this.value)"> </label></div>
+            <div> <label> Qual o ciclo da magia?
+                <input id="ciclo_magia" type="number" min="1" max="5" value="0" oninput="this.value = Math.abs(this.value)"  onclick="calcular()"> </label></div>
+            <div> <label> Quanto Economizou?
+                <input id="economizou" type="number" min="0" value="0" oninput="this.value = Math.abs(this.value)"  onclick="calcular()"> </label></div>
+            <div>  <label> Quantos Aprimoramentos?
+                <input id="aprimoramento" type="number"  min="0" value="0" oninput="this.value = Math.abs(this.value)" onclick="calcular()"> </label></div>
+            <div> <label id="custo-text">Custo dessa mágia: </label></div>
+                <div>  <label type="number" id="custo">0</label></div>
+            <div>  <label id="custo-text">Vai sobrar: </label></div>
+                <div>  <label type="number" id="sobra">0</label></div>
+            </h3></div>
+       </div>
+          
+    </main>
+    <script src="script.js"></script>
+</body> 
+
+</html>

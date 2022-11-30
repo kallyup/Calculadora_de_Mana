@@ -1,0 +1,18 @@
+.perguntas-foundry{
+ margin-top: -460px; 
+ margin-left: 380px;
+position: absolute;
+}
+
+#custo-text{
+  color: rgb(113, 214, 18);
+}
+
+#custo{
+  color: rgb(113, 214, 18);
+  font-size: 0.8cm;
+}
+#sobra{
+  color: rgb(113, 214, 18);
+  font-size: 0.8cm;
+}
